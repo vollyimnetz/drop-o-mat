@@ -1,0 +1,41 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_270x270.png",
+      "sizes": "270x270",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "name": "drop-o-mat App",
+  "short_name": "drop-o-mat",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./../../../../../docs/",
+  "description": "A small for mesuring a distance by the time it takes to reach the ground.",
+  "background_color": "#ffffff"
+}
