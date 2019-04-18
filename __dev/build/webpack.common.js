@@ -60,9 +60,9 @@ module.exports = {
     plugins: [
         new webpack.DefinePlugin({
             MY_WEBAPP_VERSION_DATE: JSON.stringify(new Date()),
-            MY_WEBAPP_SW_SCOPE: domainSetting.serviceWorkerScope,
-            MY_WEBAPP_FULL_PATH: domainSetting.startPath,
-            MY_WEBAPP_DOMAIN: domainSetting.domain,
+            MY_WEBAPP_SW_SCOPE: JSON.stringify(domainSetting.serviceWorkerScope),
+            MY_WEBAPP_FULL_PATH: JSON.stringify(domainSetting.startPath),
+            MY_WEBAPP_DOMAIN: JSON.stringify(domainSetting.domain),
         }),
         new CopyWebpackPlugin([ {from:'src/assets', to:'assets'} ], {
 
