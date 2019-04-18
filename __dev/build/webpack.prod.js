@@ -41,10 +41,10 @@ module.exports = merge(common, {
             icons: [
                 {
                     src: path.resolve('src/assets/favicon.png'),
-                    sizes: [32, 96, 180, 192, 270, 512] // multiple sizes
+                    sizes: [192, 512] // multiple sizes
                 }
             ],
-            start_url: domainSetting.startPath,
+            start_url: '/drop-o-mat/',
         })
     ]
 });
