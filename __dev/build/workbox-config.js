@@ -4,14 +4,14 @@ module.exports = {
     globDirectory: './../docs/',
     globPatterns: [
         './generated/**/*.{html,css,js,png,svg,eot,woff,ttf,svg,woff2}',
-        './app_shell.html'
+        './index.html',//the primary index file in the root directory
     ],
     swDest: './../docs/service-worker.js',
     clientsClaim: true,
     skipWaiting: true,
 
     directoryIndex:'https://vollyimnetz.github.io/drop-o-mat',
-    navigateFallback: 'app_shell.html',
+    navigateFallback: 'index.html',
     navigateFallbackBlacklist: [],
     importWorkboxFrom: 'disabled',//needs importScripts if 'disabled'
     importScripts: ['workbox-v4.2.0/workbox-sw.js'],
