@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js && npm run sw",
     "sw": "workbox generateSW build/workbox-config.js",
-    "sw-copy-lib": "workbox copyLibraries ./../public/assets"
+    "sw-copy-lib": "workbox copyLibraries ./../docs/generated/assets"
   },
   "author": "",
   "private": true,
