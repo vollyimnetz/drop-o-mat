@@ -18,44 +18,6 @@
             };
         </script>
         <div id="app"></div>
-
-        <!-- BUTTON add to homescreen -->
-        <button class="addToHomescreenButton">Add to home screen</button>
-        <script>
-        /*** START add to homescreen ***/
-        var deferredPrompt;
-        var addBtn = document.querySelector('.addToHomescreenButton');
-        addBtn.style.display = 'none';
-        console.log('button style set');
-
-        window.addEventListener('beforeinstallprompt', function(e) {
-            console.log('beforeinstallprompt fired');
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
-            e.preventDefault();
-            // Stash the event so it can be triggered later.
-            deferredPrompt = e;
-            // Update UI to notify the user they can add to home screen
-            addBtn.style.display = 'block';
-
-            addBtn.addEventListener('click', function(e) {
-                // hide our user interface that shows our addToHomescreen button
-                addBtn.style.display = 'none';
-                // Show the prompt
-                deferredPrompt.prompt();
-                // Wait for the user to respond to the prompt
-                deferredPrompt.userChoice.then(function(choiceResult) {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the addToHomescreen prompt');
-                    } else {
-                        console.log('User dismissed the addToHomescreen prompt');
-                    }
-                    deferredPrompt = null;
-                });
-            });
-        });
-        /*** END add to homescreen ***/
-        </script>
-        
         <script type="text/javascript" src="generated/vendor.js"></script>
         <script type="text/javascript" src="generated/main.js"></script>
     </body>

@@ -3,7 +3,6 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const path = require('path');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
-const domainSetting = require('./domain.settings');
 //const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const pathToBuild = path.resolve(__dirname, '../../docs/generated');
@@ -44,7 +43,7 @@ module.exports = merge(common, {
                     sizes: [192, 512] // multiple sizes
                 }
             ],
-            start_url: '/drop-o-mat/',
+            start_url: '/drop-o-mat/',//relative path
         })
     ]
 });
