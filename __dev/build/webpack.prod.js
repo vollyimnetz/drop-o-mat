@@ -40,11 +40,7 @@ module.exports = merge(common, {
             icons: [
                 {
                     src: path.resolve('src/assets/favicon.png'),
-                    sizes: [
-                        150, //ios 
-                        192, //android
-                        512, //android
-                    ] // multiple sizes
+                    sizes: [ 32, 96, 180, 192, 270, 512 ] // multiple sizes
                 }
             ],
             start_url: '/drop-o-mat/',//relative path @see: https://developers.google.com/web/fundamentals/web-app-manifest/#start-url

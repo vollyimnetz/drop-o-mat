@@ -144,12 +144,28 @@ self.__precacheManifest = [
     "revision": "31319547d346e2d0221d5e9a3f4874a2"
   },
   {
+    "url": "generated/icon_180x180.png",
+    "revision": "5918879ccc0df6e76337088b96983ac8"
+  },
+  {
     "url": "generated/icon_192x192.png",
     "revision": "a82448c5302c93df1f57fda394b8f555"
   },
   {
+    "url": "generated/icon_270x270.png",
+    "revision": "cd30b10e97d617ce50160220e6568747"
+  },
+  {
+    "url": "generated/icon_32x32.png",
+    "revision": "be4a2e0aaaed4689d8fd9575009bbe05"
+  },
+  {
     "url": "generated/icon_512x512.png",
     "revision": "fc6e6287634f77fc178bb4d93180e5f6"
+  },
+  {
+    "url": "generated/icon_96x96.png",
+    "revision": "85405af29dcd9049496dd40532eed923"
   },
   {
     "url": "generated/index.html",
@@ -161,7 +177,7 @@ self.__precacheManifest = [
   },
   {
     "url": "generated/main.js",
-    "revision": "2c472949df2f555f10ef1f7dc2404cc9"
+    "revision": "eada7d0c57ca47c945ca30f552915bd8"
   },
   {
     "url": "generated/vendor.css",
