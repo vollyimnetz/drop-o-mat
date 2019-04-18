@@ -140,6 +140,10 @@ self.__precacheManifest = [
     "revision": "da9a15dcd87a024f108b5c63bc9658b4"
   },
   {
+    "url": "generated/icon_150x150.png",
+    "revision": "31319547d346e2d0221d5e9a3f4874a2"
+  },
+  {
     "url": "generated/icon_192x192.png",
     "revision": "a82448c5302c93df1f57fda394b8f555"
   },
@@ -157,7 +161,7 @@ self.__precacheManifest = [
   },
   {
     "url": "generated/main.js",
-    "revision": "b7a84dd0466adf119c583ec3711229ec"
+    "revision": "2c472949df2f555f10ef1f7dc2404cc9"
   },
   {
     "url": "generated/vendor.css",

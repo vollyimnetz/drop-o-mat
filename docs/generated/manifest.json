@@ -9,6 +9,11 @@
       "src": "icon_192x192.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "icon_150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
     }
   ],
   "name": "drop-o-mat App",
