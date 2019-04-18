@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const domainSetting = require('./domain.settings');
 
 module.exports = {
     entry: ['babel-polyfill', './src/index.js'],
@@ -58,7 +59,10 @@ module.exports = {
     },
     plugins: [
         new webpack.DefinePlugin({
-            'MY_WEBAPP_VERSION_DATE': JSON.stringify(new Date()),
+            MY_WEBAPP_VERSION_DATE: JSON.stringify(new Date()),
+            MY_WEBAPP_SW_SCOPE: domainSetting.serviceWorkerScope,
+            MY_WEBAPP_FULL_PATH: domainSetting.startPath,
+            MY_WEBAPP_DOMAIN: domainSetting.domain,
         }),
         new CopyWebpackPlugin([ {from:'src/assets', to:'assets'} ], {
 

@@ -35,7 +35,7 @@
   "short_name": "drop-o-mat",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "./../../../../../docs/",
+  "start_url": "https://vollyimnetz.github.io/drop-o-mat",
   "description": "A small for mesuring a distance by the time it takes to reach the ground.",
   "background_color": "#ffffff"
 }

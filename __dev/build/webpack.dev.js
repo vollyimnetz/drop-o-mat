@@ -13,4 +13,9 @@ module.exports = merge(common, {
     plugins: [
         new webpack.HotModuleReplacementPlugin()
     ],
+    devServer: {
+        hot: true,
+        open: true,
+        historyApiFallback: true,//show index on every route
+    }
 });
