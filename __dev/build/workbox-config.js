@@ -5,6 +5,7 @@ module.exports = {
     globPatterns: [
         './generated/**/*.{html,css,js,png,svg,eot,woff,ttf,svg,woff2}',
         './index.html',//the primary index file in the root directory
+        './service-worker.js',
     ],
     swDest: './../docs/service-worker.js',
     clientsClaim: true,
