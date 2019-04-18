@@ -3,7 +3,7 @@
 
     if ('serviceWorker' in navigator && ['localhost', '127'].indexOf(location.hostname) === -1) { 
         console.log('service worker setup');
-        navigator.serviceWorker.register(window.mywebapp.plugin_url+'/service-worker.js', { scope: '/' })
+        navigator.serviceWorker.register(window.mywebapp.plugin_url+'/service-worker.js', { scope: '/drop-o-mat/' })
             .then(function(registration) {
                 console.log('Service Worker registered successfully.');
             })
