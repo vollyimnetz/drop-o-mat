@@ -1,5 +1,4 @@
 //@see https://developers.google.com/web/tools/workbox/modules/workbox-cli
-const domainSetting = require('./domain.settings');
 
 module.exports = {
     globDirectory: './../docs/',
@@ -11,7 +10,7 @@ module.exports = {
     clientsClaim: true,
     skipWaiting: true,
 
-    directoryIndex: domainSetting.startPath,
+    directoryIndex: './../',
     navigateFallback: 'index.html',
     navigateFallbackBlacklist: [],
     importWorkboxFrom: 'disabled',//needs importScripts if 'disabled'

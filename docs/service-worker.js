@@ -173,7 +173,7 @@ self.__precacheManifest = [
   },
   {
     "url": "generated/main.js",
-    "revision": "e76d5132bf43eb2827f8289540aa2e8a"
+    "revision": "70d8bc8ec2fb5ffe80d17d774208cd11"
   },
   {
     "url": "generated/vendor.css",
@@ -189,7 +189,7 @@ self.__precacheManifest = [
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {
-  "directoryIndex": "https://vollyimnetz.github.io/drop-o-mat"
+  "directoryIndex": "./../"
 });
 
 workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("index.html"), {
