@@ -12,7 +12,7 @@
  */
 
 importScripts(
-  "generated/assets/workbox-v4.2.0/workbox-sw.js"
+  "generated/assets/workbox-v4.3.0/workbox-sw.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "drop-o-mat-cache"});
@@ -173,7 +173,7 @@ self.__precacheManifest = [
   },
   {
     "url": "generated/main.js",
-    "revision": "82532e999402887a8fefe20d8719f257"
+    "revision": "f56efb05ff1f67cfd373b355d59a79fb"
   },
   {
     "url": "generated/vendor.css",
