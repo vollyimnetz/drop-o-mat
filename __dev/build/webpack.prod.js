@@ -43,7 +43,7 @@ module.exports = merge(common, {
                     sizes: [192, 512] // multiple sizes
                 }
             ],
-            start_url: '/drop-o-mat/',//relative path
+            start_url: '/drop-o-mat/',//relative path @see: https://developers.google.com/web/fundamentals/web-app-manifest/#start-url
         })
     ]
 });
