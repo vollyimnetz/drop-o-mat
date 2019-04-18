@@ -3,7 +3,7 @@
 module.exports = {
     globDirectory: './../docs/',
     globPatterns: [
-        './generated/**/*.{html,css,js,png,svg,eot,woff,ttf,svg,woff2}',
+        './generated/**/*.{html,css,js,json,png,svg,eot,woff,ttf,svg,woff2}',
         './index.html',//the primary index file in the root directory
         './service-worker.js',
     ],
