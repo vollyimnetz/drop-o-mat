@@ -12,7 +12,7 @@
  */
 
 importScripts(
-  "workbox-v4.2.0/workbox-sw.js"
+  "generated/assets/workbox-v4.2.0/workbox-sw.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "drop-o-mat-cache"});
@@ -30,6 +30,114 @@ self.__precacheManifest = [
   {
     "url": "generated/assets/favicon.png",
     "revision": "fde6f4fa3684d7e5064968aab62ca572"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-background-sync.dev.js",
+    "revision": "5163dbff976e9c367e2d8082c42d8e82"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-background-sync.prod.js",
+    "revision": "fe462ec9070077c7d67a6703b7e9dcbe"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-broadcast-update.dev.js",
+    "revision": "049e8b58ccea1d3a9e2f7e7230911405"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-broadcast-update.prod.js",
+    "revision": "3feb51158fd519abadaa0e9595758c99"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-cacheable-response.dev.js",
+    "revision": "b4ef1cd9cf8c60e6368624cb722f980d"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-cacheable-response.prod.js",
+    "revision": "ba959ad8274469fa7a3a85b7979e04b1"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-core.dev.js",
+    "revision": "eaa5402bd36a9359fa8f09e7844154e8"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-core.prod.js",
+    "revision": "c679f5659e7d501c68849ae863df5285"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-expiration.dev.js",
+    "revision": "247d14b3c3cc31bb1966936c7957c359"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-expiration.prod.js",
+    "revision": "7cf1bcea38b4c95c726382236a9d6610"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-navigation-preload.dev.js",
+    "revision": "5329bcf9e603625a8ceb66bd41858790"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-navigation-preload.prod.js",
+    "revision": "c56639398e95e46608d78f3f06e1f21f"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-offline-ga.dev.js",
+    "revision": "bf7bf3a2eaad466eda56af64ae8e4ad9"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-offline-ga.prod.js",
+    "revision": "309939f2cb5fbda535fa1c84e5170c30"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-precaching.dev.js",
+    "revision": "759d924075389dbb7551e3f3af7e2370"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-precaching.prod.js",
+    "revision": "57863e8ee89d7e64f03d4f7bdc19eae1"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-range-requests.dev.js",
+    "revision": "1d8912c19664030b0cc6af4cba2657ec"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-range-requests.prod.js",
+    "revision": "3a60d9f8563f1d41feda873252a87ad1"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-routing.dev.js",
+    "revision": "59e4e6b9bf058013aa3788f1951fc96f"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-routing.prod.js",
+    "revision": "4475941b51e97d5742812aa3211bfdc9"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-strategies.dev.js",
+    "revision": "9b1169319e9e9298712f36b624026ed6"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-strategies.prod.js",
+    "revision": "3f29d2ef1bd51de3658df04c76497fef"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-streams.dev.js",
+    "revision": "e308a228623b2afcc4720014d81e2798"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-streams.prod.js",
+    "revision": "09898d510579eb2255c657e99bcafecb"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-sw.js",
+    "revision": "139a8675b9982727d3bbb225c963aea5"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-window.dev.umd.js",
+    "revision": "7a0b24e68d58a0f7f37f6e1ab8c4e6ab"
+  },
+  {
+    "url": "generated/assets/workbox-v4.3.0/workbox-window.prod.umd.js",
+    "revision": "da9a15dcd87a024f108b5c63bc9658b4"
   },
   {
     "url": "generated/icon_180x180.png",
@@ -77,7 +185,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "f2a4df1e558bee1428e2f936cc3d1c15"
+    "revision": "9415bdb4832998c0f8367df4b0834320"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {

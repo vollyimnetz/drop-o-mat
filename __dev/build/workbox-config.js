@@ -14,7 +14,7 @@ module.exports = {
     navigateFallback: 'index.html',
     navigateFallbackBlacklist: [],
     importWorkboxFrom: 'disabled',//needs importScripts if 'disabled'
-    importScripts: ['workbox-v4.2.0/workbox-sw.js'],
+    importScripts: ['generated/assets/workbox-v4.2.0/workbox-sw.js'],
     cacheId: 'drop-o-mat-cache',
     runtimeCaching: [
         
