@@ -18,3 +18,41 @@ body{
   padding:0.7em;
   color:#6A1B9A; }
 
+.btnMain{
+  color:#fff;
+  font-weight:bold;
+  border-radius:50%;
+  display:block;
+  outline:none;
+  text-transform:uppercase;
+  transition:background .4s ease; }
+  @media (orientation: portrait){
+    .btnMain{
+      height:50vw;
+      width:50vw;
+      font-size:12vw;
+      margin:10vw auto; } }
+  @media (orientation: landscape){
+    .btnMain{
+      height:50vh;
+      width:50vh;
+      font-size:12vh;
+      margin:10vh auto; } }
+
+.btnMain.startButton{
+  background:#0c820c; }
+  .btnMain.startButton:hover, .btnMain.startButton:focus{
+    background:#096b09; }
+
+.btnMain.stopButton{
+  background:#b71717; }
+  .btnMain.stopButton:hover, .btnMain.stopButton:focus{
+    background:#921414; }
+
+.clockwatch{
+  display:block;
+  text-align:center; }
+
+.timeOutput .seconds{
+  font-size:1.3em; }
+
