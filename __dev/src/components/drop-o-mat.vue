@@ -16,11 +16,25 @@
                 The resulting velocity on impact is {{resultData.velocity.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}} m/s (or {{(resultData.velocity * 3.6).toLocaleString(undefined, {maximumFractionDigits: 0})}} km/h).
             </p>
         </div>
+        <hr />
+        <div v-if="historyData.length">
+            <table class="v-datatable v-table theme--light">
+                <tbody>
+                    <tr v-for="(h,$index) in historyData" :key="$index">
+                        <td><span class="timeOutput"><span class="seconds">{{ h.seconds }}</span><span class="divider">,</span><span class="millis">{{ ('00'+h.milliseconds).slice(-3) }}</span> <span class="unit">seconds</span></span></td>
+                        <td><span class="resultHeight">{{h.height.toLocaleString(undefined, {minimumFractionDigits: 1, maximumFractionDigits: 1})}} meter</span></td>
+                        <td>{{h.velocity.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}} m/s (or {{(h.velocity * 3.6).toLocaleString(undefined, {maximumFractionDigits: 0})}} km/h)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="v-flat v-btn" type="button" @click="deleteHistory">delete history</button>
+        </div>
     </section>
 </template>
 
 <script>
 import clockwatch from './clockwatch.vue';
+import { mapGetters } from 'vuex';
 export default {
     components: {
         clockwatch
@@ -30,6 +44,11 @@ export default {
         stop:false,
         resultData: null,
     }),
+    computed:{
+        ...mapGetters({
+            historyData: 'clockhistory'
+        }),
+    },
     methods: {
         startClock() {
             this.startTime = new Date();
@@ -45,6 +64,13 @@ export default {
 
             this.stop = false;
             this.startTime = null;
+            
+            
+            this.historyData.splice(0,0,this.resultData);
+            this.$store.commit('STOREHISTORYDATA', { data: this.historyData } );
+        },
+        deleteHistory() {
+            this.$store.commit('STOREHISTORYDATA', { data: [] } );
         }
     }
 }
