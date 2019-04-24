@@ -189,11 +189,11 @@ self.__precacheManifest = [
   },
   {
     "url": "generated/main.css",
-    "revision": "0fbc66e31276f73c72839ebb55f5654a"
+    "revision": "d53fd4c9e12728c807c8caf5b1188022"
   },
   {
     "url": "generated/main.js",
-    "revision": "12e6fb5c8aaaaf61e39de1e127b4f076"
+    "revision": "8d410b4c5c1277f0fd3ef0a04b901cf9"
   },
   {
     "url": "generated/manifest.json",
@@ -213,7 +213,7 @@ self.__precacheManifest = [
   },
   {
     "url": "service-worker.js",
-    "revision": "73c2c22707ce33ddee6ee8c0469b3a19"
+    "revision": "4b2bff345b319e622713a184a110218d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {

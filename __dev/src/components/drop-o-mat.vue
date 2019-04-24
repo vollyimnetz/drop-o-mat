@@ -51,6 +51,7 @@ export default {
     },
     methods: {
         startClock() {
+            this.resultData = null;
             this.startTime = new Date();
         },
         stopClock() {
@@ -65,9 +66,9 @@ export default {
             this.stop = false;
             this.startTime = null;
             
-            
-            this.historyData.splice(0,0,this.resultData);
-            this.$store.commit('STOREHISTORYDATA', { data: this.historyData } );
+            let newData = this.historyData.slice();
+            newData.splice(0,0,this.resultData);
+            this.$store.commit('STOREHISTORYDATA', { data: newData } );
         },
         deleteHistory() {
             this.$store.commit('STOREHISTORYDATA', { data: [] } );
