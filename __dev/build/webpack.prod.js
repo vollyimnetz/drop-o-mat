@@ -35,7 +35,7 @@ module.exports = merge(common, {
             fingerprints: false,//no unique fingerprints
             name: 'drop-o-mat App',
             short_name: 'drop-o-mat',
-            description: 'A small for mesuring a distance by the time it takes to reach the ground.',
+            description: 'A small app for mesuring a distance by the time it takes to reach the ground.',
             background_color: '#ffffff',
             icons: [
                 {
